@@ -33,7 +33,7 @@ class Solution{
 	        }
 	    }
 	    int ans= INT_MAX;
-	    for(int i=0;i<=sum;i++){
+	    for(int i=0;i<=sum/2;i++){
 	        if(t[n][i])
 	            ans = min(ans,abs(sum-2*i));
 	    }
