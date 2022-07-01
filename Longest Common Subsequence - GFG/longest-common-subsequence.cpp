@@ -13,6 +13,8 @@ class Solution
     int lcs(int x, int y, string s1, string s2)
     {
         // your code here
+        
+        
         int t[x+1][y+1];
         for(int i=0;i<=x;i++){
             for(int j=0;j<=y;j++){
@@ -31,6 +33,7 @@ class Solution
             }
         }
         return t[x][y];
+        
         /*if(x==0 || y==0)    return 0;
         if(s1[x-1]==s2[y-1])    return 1+lcs(x-1,y-1,s1,s2);
         else{
